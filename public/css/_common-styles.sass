@@ -1,0 +1,14 @@
+.border
+  border: 1px solid $lt-grey
+
+$sides: top right bottom left
+
+=make-border
+  @each $side in $sides
+    .border-#{$side}
+      border-#{$side}: 1px solid $lt-grey
+
++make-border
+
+.box-shadow
+  box-shadow: 0 2px 14px rgba(black, 5%)

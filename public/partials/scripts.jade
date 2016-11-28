@@ -1,0 +1,21 @@
+script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
+script.
+  $('.container').click(function(){
+    $(this).toggleClass("active");
+  });
+
+  $('.container-9').click(function() {
+    if ($(this).hasClass('active')) {
+      $(this).addClass('stage-1');
+
+      setTimeout(function() {
+        $('.container-9').addClass('stage-2');
+      }, 300);
+    } else {
+      $(this).removeClass('stage-2');
+
+      setTimeout(function() {
+        $('.container-9').removeClass('stage-1');
+      }, 300);
+    }
+  });
