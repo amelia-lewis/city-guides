@@ -1,7 +1,12 @@
+include partials/city-card
+
 extends layout
 
 block content
-  .content-wrap
-    .block-ver-xl
-      h1 City Guides
-      p Hand-curated guides to the best cities in the world.
+  .block-md
+    h1 City Guides
+    p Hand-curated guides to the best cities in the world.
+  
+  +city-card("new-york", "New York", "../img/new-york.jpg", "The concrete jungle that dreams are made of")
+  +city-card("sydney", "Sydney", "../img/sydney.jpg", "The concrete jungle that dreams are made of")
+  +city-card("london", "London", "../img/london.jpg", "The concrete jungle that dreams are made of")

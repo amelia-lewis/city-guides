@@ -3,15 +3,16 @@ html
   head
     title City Guides
     meta(name='viewport', content='width=device-width, initial-scale=1.0, user-scalable=no')
-    link(rel='stylesheet', type='text/css', href='./css/main.css')
+    link(rel='stylesheet', type='text/css', href='/css/main.css')
     link(rel='stylesheet', type='text/css', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css')
     link(rel='stylesheet', type='text/css', href='https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css')
     link(rel='stylesheet', type='text/css', href='https://fonts.googleapis.com/css?family=Karla:400,700|Playfair+Display:400,900')
-    link(rel="shortcut icon", type="image/x-icon", href="./img/favicon.ico")
+    link(rel="shortcut icon", type="image/x-icon", href="/img/favicon.ico")
   
   body
-    block content
-    
+    #content
+      block content
+      
     footer.border-top
       .content-wrap
         .block-ver-md
