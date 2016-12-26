@@ -31,6 +31,27 @@
       line-height: 82%
       margin: 100px 0 0
 
+  .tabs
+    position: relative
+
+    > ul
+      position: absolute
+      right: 30px
+      top: -40px
+      list-style: none
+      z-index: 20
+
+      li
+        display: inline-block
+        margin: 0 0 0 20px
+
+        a
+          text-transform: uppercase
+          color: white
+          font-size: 1.4em
+          letter-spacing: 0.1em
+
+
   .city-content
     @extend .block-top-lg
     @extend .block-hor-md
@@ -40,7 +61,7 @@
 
     .grid-item
       width: 100%
-      margin: 0 0 20px
+      margin: 0 0 40px
 
       @media (min-width: $screen-sm-min)
         width: calc((100% - 20px) / 2)

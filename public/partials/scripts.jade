@@ -1,3 +1,4 @@
+//- JQUERY
 script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
 script.
   $('.container').click(function(){
@@ -21,6 +22,7 @@ script.
   });
 
 
+//- MASONRY
 script(src='https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js')
 script.
   $('.grid').masonry({
@@ -28,3 +30,9 @@ script.
     itemSelector: '.grid-item',
     gutter: 20
   });
+
+
+//- TABSLET
+script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery.tabslet.js/1.7.3/jquery.tabslet.min.js')
+script.
+  $('.tabs').tabslet();
