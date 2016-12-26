@@ -1,4 +1,4 @@
-mixin item-card(name, location, locationurl, img, imgcredit, ...categories)
+mixin item-card(name, location, locationurl, img, imgcredit, note, ...categories)
   .item-card
     p.item-name= name
     a.item-location(href=locationurl target="_blank")
@@ -11,3 +11,5 @@ mixin item-card(name, location, locationurl, img, imgcredit, ...categories)
     ul.item-categories
       each category in categories
         li= category
+    if note
+      p.item-note= note
