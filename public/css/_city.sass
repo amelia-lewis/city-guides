@@ -1,0 +1,52 @@
+.city-view
+  .city-title
+    position: relative
+    background: black no-repeat center / cover
+    @extend .block-top-md
+    @extend .block-hor-md
+    color: white
+
+    &:before
+      content: ""
+      position: absolute
+      top: 0
+      right: 0
+      bottom: 0
+      left: 0
+      background: rgba(black, 0.5)
+      transition: all 600ms
+
+    > *
+      position: relative
+      z-index: 10
+
+    a
+      border-color: rgba(white, 0.25)
+
+      &:hover
+        border-color: white
+
+    h1  
+      font-size: 8em
+      line-height: 82%
+      margin: 100px 0 0
+
+  .city-content
+    @extend .block-top-lg
+    @extend .block-hor-md
+    
+    h2
+      font-size: 3em
+
+    .grid-item
+      width: 100%
+      margin: 0 0 20px
+
+      @media (min-width: $screen-sm-min)
+        width: calc((100% - 20px) / 2)
+
+      @media (min-width: $screen-lg-min)
+        width: calc((100% - 60px) / 4)
+
+      @media (min-width: $screen-xl-min)
+        width: calc((100% - 80px) / 5)

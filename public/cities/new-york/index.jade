@@ -1,8 +1,27 @@
 extends ../../layout
+include ../../partials/item-card
+
+block append vars
+  - bodyclass = 'city-view'
 
 block content
-  .content-wrap
-    .block-ver-xl
-      .block-ver-md
-        h1 New York
-        p The concrete jungle that dreams are made of...
+  .city-title(style="background-image: url('../../img/new-york.jpg');")
+    a.link-underline(href="/") ← Go back
+    h1 New York
+
+  .city-content
+    h2 Pizza
+    .grid
+      .grid-item: +item-card("Artichoke Slice", "Artichoke Basille's Pizza", "http://www.artichokepizza.com/", "https://scontent-lga3-1.cdninstagram.com/t51.2885-15/e35/14676491_1875794545986401_1565395221523464192_n.jpg?ig_cache_key=MTM3NTU4NjM3NzA1MjExMjY5Nw%3D%3D.2", "natalie_1107")
+      .grid-item: +item-card("Cheese Slice", "Joe's Pizza", "http://joespizzanyc.com/", "https://scontent-lga3-1.cdninstagram.com/t51.2885-15/e35/15535080_241612149606327_7020266101355315200_n.jpg?ig_cache_key=MTQwOTU4MDU2Mzk4MzgwOTk5OA%3D%3D.2", "eatmeoutfoodie")
+
+    hr
+
+    h2 Sweet Treats
+    .grid
+      .grid-item: +item-card("Crème Brûlée Doughnut", "Doughnut Plant", "http://doughnutplant.com/", "https://scontent-lga3-1.cdninstagram.com/t51.2885-15/e35/14574277_624322174409329_3228352068284579840_n.jpg?ig_cache_key=MTM1MjQ4MjM3NTQwNjE4NTI3MA%3D%3D.2", "s.eat.tle", "Doughnut")
+      .grid-item: +item-card("Hibiscus Doughnut", "Dough", "http://www.doughdoughnuts.com/", "https://scontent-lga3-1.cdninstagram.com/t51.2885-15/e35/15337157_964821706952226_6720006621319135232_n.jpg?ig_cache_key=MTM5NzIzOTc0NjA1MzEyMjY3MQ%3D%3D.2", "allibarrera", "Doughnut")
+      .grid-item: +item-card("Everything Doughnut", "The Doughnut Project", "http://www.thedoughnutproject.com/", "https://scontent-lga3-1.cdninstagram.com/t51.2885-15/e35/15624323_1764160527239445_4440994942818451456_n.jpg?ig_cache_key=MTQxMTY3ODc2NDcyNzE5OTA0Ng%3D%3D.2", "onehungryjew", "Doughnut")
+      .grid-item: +item-card("Cronut", "Dominique Ansel Bakery", "http://dominiqueansel.com/", "https://scontent-lga3-1.cdninstagram.com/t51.2885-15/e35/14712134_691057251052521_8392859089910104064_n.jpg?ig_cache_key=MTM2ODU2MjEwNDA2MDA2NDg3MA%3D%3D.2", "cronutgirl", "Doughnut")
+
+    hr

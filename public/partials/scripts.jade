@@ -19,3 +19,12 @@ script.
       }, 300);
     }
   });
+
+
+script(src='https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js')
+script.
+  $('.grid').masonry({
+    // options
+    itemSelector: '.grid-item',
+    gutter: 20
+  });

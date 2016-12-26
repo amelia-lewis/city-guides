@@ -1,0 +1,13 @@
+mixin item-card(name, location, locationurl, img, imgcredit, ...categories)
+  .item-card
+    p.item-name= name
+    a.item-location(href=locationurl target="_blank")
+      i.fa.fa-map-marker
+      span= location
+    .item-img-container
+      img(src=img)
+      a.item-credit(href="https://www.instagram.com/" + imgcredit target="_blank") @
+        span= imgcredit
+    ul.item-categories
+      each category in categories
+        li= category
